@@ -13,7 +13,19 @@
 #if defined(__clang__) || defined(__GNUC__)
 #define DYWOQC_HAS_ATTRIBUTE(attribute) __has_c_attribute(attribute)
 #else
-#define DYWOQC_HAS_ATTRIBUTE
+#define DYWOQC_HAS_ATTRIBUTE(attribute)
+#endif
+
+#if DYWOQC_HAS_ATTRIBUTE(nodiscard)
+#define DYWOQC_NODISCARD [[nodiscard]]
+#else
+#define DYWOQC_NODISCARD
+#endif
+
+#if DYWOQC_HAS_ATTRIBUTE(deprecated)
+#define DYWOQC_DEPRECATED [[deprecated]]
+#else
+#define DYWOQC_DEPRECATED
 #endif
 
 #endif
