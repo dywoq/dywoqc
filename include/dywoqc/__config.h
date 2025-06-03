@@ -28,4 +28,17 @@
 #define DYWOQC_DEPRECATED
 #endif
 
+// extern "C++"
+#ifdef __cplusplus
+#define DYWOQC_EXTERN_CXX_START extern "C++" {
+#else
+#define DYWOQC_EXTERN_CXX_START
+#endif
+
+#ifdef __cplusplus
+#define DYWOQC_EXTERN_CXX_END }
+#else
+#define DYWOQC_EXTERN_CXX_END
+#endif
+
 #endif
