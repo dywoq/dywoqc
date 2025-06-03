@@ -36,6 +36,7 @@ DYWOQC_EXPORTED_FROM_ABI void dywoqc_error_exit(const dywoqc_error *__err) {
   fprintf(stderr, "%s", __err->message);
   __dywoqc_error_fatal_exit();
 }
+
 DYWOQC_EXPORTED_FROM_ABI void dywoqc_error_free(dywoqc_error *__err) {
   if (__err == DYWOQC_NULLPTR)
     return;
