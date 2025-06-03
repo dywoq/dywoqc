@@ -41,4 +41,11 @@
 #define DYWOQC_EXTERN_CXX_END
 #endif
 
+// nullptr, NULL macro
+#if defined(__clang__) || defined(__GNUC__)
+#define DYWOQC_NULLPTR nullptr
+#else
+#define DYWOQC_NULLPTR NULL
+#endif
+
 #endif
