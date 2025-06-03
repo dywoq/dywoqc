@@ -28,6 +28,12 @@
 #define DYWOQC_DEPRECATED
 #endif
 
+#if DYWOQC_HAS_ATTRIBUTE(deprecated)
+#define DYWOQC_DEPRECATED_WITH_MESSAGE(message) [[deprecated(message)]]
+#else
+#define DYWOQC_DEPRECATED_WITH_MESSAGE(message)
+#endif
+
 // extern "C++"
 #ifdef __cplusplus
 #define DYWOQC_EXTERN_CXX_START extern "C++" {
