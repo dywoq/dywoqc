@@ -1,4 +1,4 @@
-#include "../include/dywoqc/fatal.h"
+#include "../include/dywoqc/__fatal.h"
 #include <stdio.h>
 #include <stdlib.h>
 
