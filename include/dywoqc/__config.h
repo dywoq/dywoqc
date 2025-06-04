@@ -29,4 +29,10 @@
 #  define _DYWOQC_DEPRECATED(message)
 #endif
 
+#if defined(__cplusplus)
+#  define _DYWOQC_EXTERN_C extern "C"
+#else
+#  define _DYWOQC_EXTERN_C
+#endif
+
 #endif
