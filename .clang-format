@@ -1,6 +1,5 @@
 BasedOnStyle: LLVM
 IndentWidth: 2
-ColumnLimit: 70
-PenaltyReturnTypeOnItsOwnLine: 0
+ColumnLimit: 110
 IndentPPDirectives: AfterHash
 AlwaysBreakAfterDefinitionReturnType: All
