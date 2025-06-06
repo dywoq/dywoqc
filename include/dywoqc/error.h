@@ -14,6 +14,12 @@ typedef enum {
   dywoqc_error_code_success = EXIT_SUCCESS
 } dywoqc_error_code;
 
+#define _DYWOQC_ERROR_PAIR_DECLARE(type)                                       \
+  typedef struct {                                                             \
+    type value;                                                                \
+    dywoqc_error_code err;                                                     \
+  }
+
 #ifdef __cplusplus
 }
 #endif
