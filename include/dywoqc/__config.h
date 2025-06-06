@@ -31,13 +31,6 @@
 #  define _DYWOQC_DEPRECATED(message)
 #endif
 
-// extern "C"
-#if defined(__cplusplus)
-#  define _DYWOQC_EXTERN_C extern "C"
-#else
-#  define _DYWOQC_EXTERN_C
-#endif
-
 // check for base support
 #if __STDC_VERSION__ >= 202311L
 #  define _DYWOQC_HAS_BASE_SUPPORT 1

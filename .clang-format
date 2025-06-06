@@ -1,5 +1,10 @@
+Language: ObjC
 BasedOnStyle: LLVM
 IndentWidth: 2
 ColumnLimit: 110
 IndentPPDirectives: AfterHash
 AlwaysBreakAfterDefinitionReturnType: All
+
+AllowShortBlocksOnASingleLine: Always
+AllowShortEnumsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse

@@ -4,9 +4,19 @@
 #include "__config.h"
 
 #if _DYWOQC_HAS_BASE_SUPPORT
-_DYWOQC_EXTERN_C _DYWOQC_EXPORTED_FROM_ABI void __dywoqc_fatal_message(const char *__message);
-_DYWOQC_EXTERN_C _DYWOQC_EXPORTED_FROM_ABI void __dywoqc_fatal_exit();
-_DYWOQC_EXTERN_C _DYWOQC_EXPORTED_FROM_ABI void __dywoqc_fatal(const char *__message);
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+_DYWOQC_EXPORTED_FROM_ABI void __dywoqc_fatal_message(const char *__message);
+
+_DYWOQC_EXPORTED_FROM_ABI void __dywoqc_fatal_exit();
+
+_DYWOQC_EXPORTED_FROM_ABI void __dywoqc_fatal(const char *__message);
+
+#ifdef __cplusplus
+}
+#endif
 #endif
 
 #endif
